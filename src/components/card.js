@@ -8,13 +8,14 @@ const propTypes = {
 const Card = ({
     photo
 }) => (
-    <div className="card" style={{width: "18rem"}}>
+    
+    <div className="col-2 card" style={{width: "18rem"}} onClick={handle}>
         <img className="card-img-top" src={photo} alt="Card image cap"></img>
         <div className="card-body">
 
         </div>
     </div>
-
+    
 
 
     
@@ -23,7 +24,11 @@ const Card = ({
 );
 
 
+const handle = () => (
+    console.log("Button clicked")
 
+
+);
 
 
 
