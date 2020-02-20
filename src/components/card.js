@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {randomize} from '../App.js'
+import {randomize,reInit} from '../App.js'
 
 let choices = [];
 
@@ -37,14 +37,19 @@ const handle = (event) => {
 
 
     choices.push(event.target.src)
-    const temp = [];
+    let temp = [];
     console.log(choices)
 
     for (let i = 0; i < choices.length; i++){
         let holder = choices[i];
 
         if (temp.indexOf(holder) !== -1){
+            temp = [];
+            choices = [];
+            reInit();
+            
             verdict(true);
+            break;
         }
         temp.push(holder);
         

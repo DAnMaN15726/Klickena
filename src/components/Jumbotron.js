@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 const propTypes = {
     score: PropTypes.integer,
+    correct: PropTypes.string
 
 
 }
@@ -10,11 +11,12 @@ const propTypes = {
 
 
 const Jumbotron = ({
-    score
+    score,
+    correct
 }) =>(
     <div className="jumbotron">
         <h1>Don't Click The Same Photo Twice</h1>
-        <p>Score:{score}</p>
+        <p>Score: {score}        : {correct}</p> 
     </div>
 
 

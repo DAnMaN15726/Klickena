@@ -7,7 +7,12 @@ import {Card, verdict} from "./components/card";
 import Jumbotron from "./components/Jumbotron"
 import characters from "./characters.json"
 
+let number = -2;
 const array = [];
+let answer;
+let newGame = 0;
+
+
 const arrayLinks = () => (
 
   characters.map((info, index) => {
@@ -22,12 +27,41 @@ const arrayLinks = () => (
 );
 arrayLinks()
 
+export const scor = () => {
+  number+=1
+  
+  if( number === 0 ){
+    answer = "GOOD LUCK!"
+  }
+  else if(number === 10){
+    answer = "WOMBOOOO COMBOOOO!"
+  }
+  
+  else{
+    answer = "CORRECT!"
+  }
+  
+  return number;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 const App = () => (
   
   
   <div className = "container-fluid">
     <Jumbotron
-      score = {0}
+      score = {scor()}
+      correct = {answer}
     />
 
 
@@ -67,6 +101,23 @@ export const randomize = () => {
   
 };
 randomize()
+
+
+
+export const reInit = () => {
+  newGame++
+  number = -2
+  
+  ReactDOM.render(App(), document.getElementById('root'));
+
+
+
+
+
+}
+
+
+
 
 
 
