@@ -15,7 +15,7 @@ const Jumbotron = ({
     correct
 }) =>(
     <div className="jumbotron">
-        <h1>Don't Click The Same Photo Twice</h1>
+        <h1>FUTURAMA:<br></br> Don't Click The Same Image Twice!</h1>
         <p>Score: {score}        : {correct}</p> 
     </div>
 

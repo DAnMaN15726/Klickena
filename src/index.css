@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+@font-face{
+  font-family: "Voyager Grotesque(regular)";
+  src: url('./font/V-GERB(bold).ttf') format('truetype');
+
+}
+
+
 
 
 .card{
@@ -37,6 +44,7 @@ code {
 }
 
 .jumbotron{
+  font-family: "Voyager Grotesque(regular)";
   background-color: #50B67F;
   box-shadow: 0px 0px 0px 14px #962235;
 }
