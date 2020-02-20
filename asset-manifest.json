@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Klickena/static/css/main.68f5a604.chunk.css",
+    "main.js": "/Klickena/static/js/main.c2d94ab2.chunk.js",
+    "main.js.map": "/Klickena/static/js/main.c2d94ab2.chunk.js.map",
+    "runtime-main.js": "/Klickena/static/js/runtime-main.94528138.js",
+    "runtime-main.js.map": "/Klickena/static/js/runtime-main.94528138.js.map",
+    "static/js/2.8c023074.chunk.js": "/Klickena/static/js/2.8c023074.chunk.js",
+    "static/js/2.8c023074.chunk.js.map": "/Klickena/static/js/2.8c023074.chunk.js.map",
+    "index.html": "/Klickena/index.html",
+    "precache-manifest.18e528831b7c6d5b5bb0b84ec4e47219.js": "/Klickena/precache-manifest.18e528831b7c6d5b5bb0b84ec4e47219.js",
+    "service-worker.js": "/Klickena/service-worker.js",
+    "static/css/main.68f5a604.chunk.css.map": "/Klickena/static/css/main.68f5a604.chunk.css.map",
+    "static/js/2.8c023074.chunk.js.LICENSE.txt": "/Klickena/static/js/2.8c023074.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Klickena/static/media/fr-title.1fc7d118.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94528138.js",
+    "static/js/2.8c023074.chunk.js",
+    "static/css/main.68f5a604.chunk.css",
+    "static/js/main.c2d94ab2.chunk.js"
+  ]
+}
