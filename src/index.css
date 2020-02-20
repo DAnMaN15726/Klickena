@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+.card{
+  margin: 10px;
+  background-color: #537066;
+  
+
+
+}
+
+
+
+.card:hover{
+  transition-duration: .3s;
+  box-shadow: inset 0px 0px 18px 14px rgba(0,204,255,0.10);
+
+}
+
+
+.card:active{
+  transition-duration: .3s;
+  box-shadow: inset 0px 0px 18px 14px rgb(0, 204, 255);
+}
+
+.jumbotron{
+  background-color: #50B67F;
+  box-shadow: 0px 0px 0px 14px #962235;
+}
+
+.container-fluid{
+  background-color:#5DB0A8
+}
