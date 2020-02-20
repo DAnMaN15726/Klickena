@@ -1,7 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 
-import Card from "./components/card";
+
+import {Card, verdict} from "./components/card";
 import Jumbotron from "./components/Jumbotron"
 import characters from "./characters.json"
 
@@ -21,6 +23,7 @@ const arrayLinks = () => (
 arrayLinks()
 
 const App = () => (
+  
   
   <div className = "container-fluid">
     <Jumbotron
@@ -49,7 +52,7 @@ const App = () => (
 
 );
 
-const randomize = (array) => {
+export const randomize = () => {
   let updated;
   let temp;
   for( let i = array.length - 1; i > 0; i--){
@@ -60,10 +63,13 @@ const randomize = (array) => {
 
     
   }
-  return array;
+  ReactDOM.render(App(), document.getElementById('root'));
   
 };
-randomize(array)
+randomize()
+
+
+
 
 
 

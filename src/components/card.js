@@ -1,12 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import {randomize} from '../App.js'
+
+let choices = [];
 
 const propTypes = {
     photo: PropTypes.string,
     name: PropTypes.strings
 }
 
-const Card = ({
+export const Card = ({
     photo,
     name
 }) => (
@@ -26,15 +29,48 @@ const Card = ({
 );
 
 
-const handle = () => (
-    console.log("Button clicked")
+const handle = (event) => {
+    
+    event.preventDefault();
+   
+    
 
 
-);
+    choices.push(event.target.src)
+    const temp = [];
+    console.log(choices)
+
+    for (let i = 0; i < choices.length; i++){
+        let holder = choices[i];
+
+        if (temp.indexOf(holder) !== -1){
+            verdict(true);
+        }
+        temp.push(holder);
+        
+    }
+    verdict(false);
+    
+};
+
+
+export const verdict = (decision) => {
+    if( decision === true){
+        console.log("DUPLICATE")
+        
+        
+    }
+    else{
+        randomize();
+    }
+    
+};
 
 
 
 
 
 
-export default Card;
+
+
+
