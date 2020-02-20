@@ -13,9 +13,8 @@ code {
 }
 
 @font-face{
-  font-family: "Voyager Grotesque(regular)";
-  src: url('./font/V-GERB(bold).ttf') format('truetype');
-
+  font-family: "Futurama";
+  src: url('./font/fr-title.ttf') format('truetype');
 }
 
 
@@ -44,7 +43,7 @@ code {
 }
 
 .jumbotron{
-  font-family: "Voyager Grotesque(regular)";
+  font-family: "Futurama";
   background-color: #50B67F;
   box-shadow: 0px 0px 0px 14px #962235;
 }
