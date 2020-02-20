@@ -2,11 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const propTypes = {
-    photo: PropTypes.string
+    photo: PropTypes.string,
+    name: PropTypes.strings
 }
 
 const Card = ({
-    photo
+    photo,
+    name
 }) => (
     
     <div className="col-2 card" style={{width: "18rem"}} onClick={handle}>
