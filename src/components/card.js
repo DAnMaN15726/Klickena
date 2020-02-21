@@ -1,13 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import {randomize,reInit} from '../App.js'
 
 let choices = [];
 
-const propTypes = {
-    photo: PropTypes.string,
-    name: PropTypes.strings
-}
+// const propTypes = {
+//     photo: PropTypes.string,
+//     name: PropTypes.string
+// }
 
 export const Card = ({
     photo,
@@ -15,7 +15,7 @@ export const Card = ({
 }) => (
     
     <div className="col-2 card" style={{width: "18rem"}} onClick={handle}>
-        <img className="card-img-top" src={photo} alt="Card image cap"></img>
+        <img className="card-img-top" src={photo} alt="Card"></img>
         <div className="card-body">
 
         </div>

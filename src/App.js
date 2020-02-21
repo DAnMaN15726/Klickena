@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './App.css';
 
 
-import {Card, verdict} from "./components/card";
+import {Card} from "./components/card";
 import Jumbotron from "./components/Jumbotron"
 import characters from "./characters.json"
 
 let number = -2;
 const array = [];
 let answer;
-let newGame = 0;
+
 
 
 const arrayLinks = () => (
@@ -106,7 +106,7 @@ randomize()
 
 
 export const reInit = () => {
-  newGame++
+  
   number = -2
   
   ReactDOM.render(App(), document.getElementById('root'));
