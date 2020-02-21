@@ -71,6 +71,7 @@ const App = () => (
       {array.map((info, index) => {
         return(
           <Card
+            key = {info}
             photo = {info}
           />
       )
